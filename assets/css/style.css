@@ -36,10 +36,6 @@
     background-color: cornflowerblue;
 }
 
-.debug .site_main_container {
-    background-color: bisque;
-}
-
 .debug #sub_plan_section .section_container {
     background-color: greenyellow;
 }
@@ -182,10 +178,41 @@
 /* #endregion tools_section */
 
 
+/* #region partners_section */
+
+#partners_header {
+    background-color: aquamarine;
+    height: 12%;
+}
+
+
+/* #endregion partners_section */
+
+
+/* #region faq_section */
+
+
+/* #endregion faq_section */
+
+
 /* #endregion #site_main */
 
 
-/* #region #site_header */
+/* #region #site_footer */
+
+#site_footer {
+    height: 70vh;
+}
+
+#footer_main {
+    background-color: darkcyan;
+    height: 80%;
+}
+
+#footer_footer {
+    background-color: darkorchid;
+    height: 20%;
+}
 
 
-/* #endregion #site_header */
+/* #endregion #site_footer */
