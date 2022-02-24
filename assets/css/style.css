@@ -24,22 +24,20 @@
 
 .debug .navbar {
     height: 10%;
-}
-
-.debug .header-container {
-    height: 90%;
-}
-
-.debug .navbar {
     background-color: orange;
+}
+
+.debug .header_container {
+    height: 90%;
+    background-color: palegoldenrod;
 }
 
 .debug .navbar .col {
     background-color: cornflowerblue;
 }
 
-.debug .header-container {
-    background-color: aquamarine;
+.debug .site_main_container {
+    background-color: bisque;
 }
 
 
@@ -53,7 +51,7 @@
     height: 100%;
 }
 
-.margin-right {
+.gutter_right {
     margin-right: var(--gutter);
 }
 
@@ -80,6 +78,33 @@
 
 
 /* #region #site_main */
+
+.site_main_container {
+    width: 80vw;
+    margin: 5vh auto;
+}
+
+.section_container {
+    width: 100%;
+    height: 95vh;
+    margin-bottom: 5vh;
+}
+
+#sub_plan_section .section_container {
+    background-color: lightblue;
+}
+
+#tools_section .section_container {
+    background-color: rgb(172, 69, 172);
+}
+
+#partners_section .section_container {
+    background-color: lightcoral;
+}
+
+#faq_section .section_container {
+    background-color: lightgreen;
+}
 
 
 /* #endregion #site_main */
