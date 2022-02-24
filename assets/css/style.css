@@ -70,6 +70,10 @@
     height: 100%;
 }
 
+.row_50 {
+    height: calc(50% - var(--gutter)/2);
+}
+
 .col {
     float: left;
     height: 100%;
@@ -157,6 +161,25 @@
 
 
 /* #endregion get_in_touch_section */
+
+
+/* #region tools_section */
+
+#tools_header {
+    background-color: chocolate;
+    height: 8%;
+}
+
+#tools_main {
+    height: 92%;
+}
+
+#tools_main .col_33 {
+    background-color: palegreen;
+}
+
+
+/* #endregion tools_section */
 
 
 /* #endregion #site_main */
