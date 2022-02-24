@@ -12,21 +12,68 @@
     clear: both;
 }
 
-body {
-    background-color: aqua;
+:root {
+    --gutter: 0.5rem;
 }
 
 
 /* #endregion Common */
 
 
+/* #region Debug */
+
+.debug .navbar {
+    height: 10%;
+}
+
+.debug .header-container {
+    height: 90%;
+}
+
+.debug .navbar {
+    background-color: orange;
+}
+
+.debug .navbar .col {
+    background-color: cornflowerblue;
+}
+
+.debug .header-container {
+    background-color: aquamarine;
+}
+
+
+/* #endregion Debug */
+
+
 /* #region Utility */
+
+.col {
+    float: left;
+    height: 100%;
+}
+
+.margin-right {
+    margin-right: var(--gutter);
+}
 
 
 /* #endregion Utility */
 
 
 /* #region #site_header */
+
+#site_header {
+    height: 95vh;
+}
+
+.navbar .row {
+    height: 100%;
+}
+
+.navbar .col {
+    width: calc(50% - var(--gutter)/2);
+}
 
 
 /* #endregion #site_header */
