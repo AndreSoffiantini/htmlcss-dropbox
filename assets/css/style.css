@@ -1,0 +1,44 @@
+/* #region Common */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+body {
+    background-color: aqua;
+}
+
+
+/* #endregion Common */
+
+
+/* #region Utility */
+
+
+/* #endregion Utility */
+
+
+/* #region #site_header */
+
+
+/* #endregion #site_header */
+
+
+/* #region #site_main */
+
+
+/* #endregion #site_main */
+
+
+/* #region #site_header */
+
+
+/* #endregion #site_header */
