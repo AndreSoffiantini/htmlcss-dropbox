@@ -40,11 +40,31 @@
     background-color: bisque;
 }
 
+.debug #sub_plan_section .section_container {
+    background-color: greenyellow;
+}
+
+.debug #tools_section .section_container {
+    background-color: rgb(172, 69, 172);
+}
+
+.debug #partners_section .section_container {
+    background-color: lightcoral;
+}
+
+.debug #faq_section .section_container {
+    background-color: lightgreen;
+}
+
 
 /* #endregion Debug */
 
 
 /* #region Utility */
+
+.row {
+    height: 100%;
+}
 
 .col {
     float: left;
@@ -53,6 +73,19 @@
 
 .gutter_right {
     margin-right: var(--gutter);
+}
+
+.col_50 {
+    width: calc(50% - var(--gutter)/2);
+}
+
+.col_100 {
+    width: 100%;
+}
+
+.col_33 {
+    width: calc(100%/3 - var(--gutter)*2/3);
+    margin-bottom: var(--gutter);
 }
 
 
@@ -67,10 +100,6 @@
 
 .navbar .row {
     height: 100%;
-}
-
-.navbar .col {
-    width: calc(50% - var(--gutter)/2);
 }
 
 
@@ -90,21 +119,30 @@
     margin-bottom: 5vh;
 }
 
-#sub_plan_section .section_container {
-    background-color: lightblue;
+
+/* #region sub_plan_section */
+
+#sub_plan_header {
+    height: 8%;
+    background-color: darkolivegreen;
 }
 
-#tools_section .section_container {
-    background-color: rgb(172, 69, 172);
+#sub_plan_main {
+    height: 92%;
 }
 
-#partners_section .section_container {
-    background-color: lightcoral;
+#sub_plan_section .col_33 {
+    background-color: crimson;
+    height: calc(85% - var(--gutter));
 }
 
-#faq_section .section_container {
-    background-color: lightgreen;
+#sub_plan_section .col_100 {
+    background-color: crimson;
+    height: 15%;
 }
+
+
+/* #endregion sub_plan_section */
 
 
 /* #endregion #site_main */
