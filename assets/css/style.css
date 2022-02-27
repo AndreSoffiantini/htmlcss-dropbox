@@ -58,6 +58,11 @@ img {
     background-color: greenyellow;
 }
 
+.debug #sub_plan_header {
+    height: 200px;
+    background-color: darkolivegreen;
+}
+
 .debug #sub_plan_section #sub_plan_main {
     height: 100%;
 }
@@ -192,7 +197,6 @@ img {
 .px_1 {
     padding-left: 1rem;
     padding-right: 1rem;
-    ;
 }
 
 
@@ -266,23 +270,21 @@ img {
 
 /* #region sub_plan_section */
 
-#sub_plan_header {
-    height: 8%;
-    background-color: darkolivegreen;
+#sub_plan_header h2 {
+    margin-top: 12rem;
+    font-size: 36px;
+}
+
+#sub_plan_header ul {
+    margin-top: 3rem;
+}
+
+#sub_plan_header li {
+    margin-right: 2.5rem;
 }
 
 #sub_plan_main {
-    height: 92%;
-}
-
-#sub_plan_section .col_33 {
-    background-color: crimson;
-    height: calc(85% - var(--gutter));
-}
-
-#sub_plan_section .col_100 {
-    background-color: crimson;
-    height: 15%;
+    height: 800px;
 }
 
 
