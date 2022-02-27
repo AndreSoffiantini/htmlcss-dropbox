@@ -1,19 +1,35 @@
 /* #region Common */
 
+:root {
+    --azure: #B4D0E7;
+    --cornflower: #0061FF;
+    --green_blue: #0093CE;
+    --dark_blue: #0D2481;
+    --magenta: #61082B;
+    --brown: #733656;
+    --pale_green: #A2D39B;
+    --brown_red: #D5001F;
+    --orange: #FF1C1C;
+    --yellow: #FFD830;
+}
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
 }
 
-.clearfix::after {
-    content: "";
-    display: table;
-    clear: both;
+a {
+    text-decoration: none;
 }
 
-:root {
-    --gutter: 0.5rem;
+li a {
+    color: black;
+}
+
+img {
+    max-width: 100%;
 }
 
 
@@ -22,22 +38,28 @@
 
 /* #region Debug */
 
-.debug .navbar {
-    height: 10%;
+.debug #site_header {
+    height: 75px;
     background-color: orange;
 }
 
-.debug .header_container {
-    height: 90%;
-    background-color: palegoldenrod;
+.debug [class^="col_"] {
+    height: 75px;
+    background-color: rgb(126 49 34);
+    border: 1px solid black;
 }
 
-.debug .navbar .col {
-    background-color: cornflowerblue;
+.debug #site_main {
+    height: 4000px;
+    background-color: aquamarine;
 }
 
 .debug #sub_plan_section .section_container {
     background-color: greenyellow;
+}
+
+.debug #sub_plan_section #sub_plan_main {
+    height: 100%;
 }
 
 .debug #get_in_touch_section .section_container {
@@ -56,35 +78,59 @@
     background-color: lightgreen;
 }
 
+.debug #site_footer {
+    height: 500px;
+}
+
 
 /* #endregion Debug */
 
 
 /* #region Utility */
 
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
 .pos_rel {
     position: relative;
+}
+
+.section_container {
+    width: 70%;
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+.large_container {
+    width: 90%;
+    max-width: 1162px;
+    margin: auto;
 }
 
 .row {
     height: 100%;
 }
 
-.row_50 {
-    height: calc(50% - var(--gutter)/2);
+.row::after {
+    content: "";
+    display: table;
+    clear: both;
 }
 
-.col {
+.row_50 {
+    height: 50%;
+}
+
+[class^="col_"] {
     float: left;
     height: 100%;
 }
 
-.gutter_right {
-    margin-right: var(--gutter);
-}
-
 .col_50 {
-    width: calc(50% - var(--gutter)/2);
+    width: 50%;
 }
 
 .col_100 {
@@ -92,8 +138,61 @@
 }
 
 .col_33 {
-    width: calc(100%/3 - var(--gutter)*2/3);
-    margin-bottom: var(--gutter);
+    width: calc(100%/3);
+}
+
+.col_40 {
+    width: 40%;
+}
+
+.col_60 {
+    width: 60%;
+}
+
+
+/* List classes */
+
+.unstyled_list {
+    list-style: none;
+}
+
+.inline_list {
+    display: inline-block;
+}
+
+.inline_list li {
+    display: inline-block;
+}
+
+
+/* Buttons */
+
+.btn {
+    display: inline-block;
+    background-color: transparent;
+    font-size: 0.9rem;
+    padding: 0.5rem;
+}
+
+.cornflw_btn {
+    background-color: var(--cornflower);
+    color: white;
+}
+
+
+/* Text */
+
+.text-right {
+    text-align: right;
+}
+
+
+/* Spaces */
+
+.px_1 {
+    padding-left: 1rem;
+    padding-right: 1rem;
+    ;
 }
 
 
@@ -103,11 +202,26 @@
 /* #region #site_header */
 
 #site_header {
-    height: 500px;
+    padding: 0.75rem;
 }
 
-.navbar .row {
-    height: 100%;
+.navbar .logo {
+    line-height: 75px;
+    margin: 5px 0 0 10px;
+}
+
+.navbar .logo>img {
+    vertical-align: middle;
+}
+
+.navbar .left_menu a,
+.navbar .right_menu a {
+    padding: 0.5rem;
+}
+
+.navbar a {
+    font-size: 14;
+    font-weight: 400;
 }
 
 
@@ -116,12 +230,38 @@
 
 /* #region #site_main */
 
-.section_container {
-    width: 1200px;
-    height: 2000px;
-    margin: 100px auto;
-    margin-bottom: 5vh;
+
+/* #region hero_image */
+
+.hero_image {
+    height: 650px;
+    background-color: var(--azure);
+    padding: 3rem;
 }
+
+.hero_image h1 {
+    font-size: 68px;
+    padding-top: 4rem;
+}
+
+.hero_text p {
+    margin: 2rem 0 1.5rem;
+}
+
+.free_trial div {
+    font-size: 0.75rem;
+}
+
+.hero_image .col_60>img {
+    margin-top: 2rem;
+}
+
+.arrow_down {
+    font-size: 45px;
+}
+
+
+/* #endregion hero_image */
 
 
 /* #region sub_plan_section */
@@ -216,17 +356,7 @@
 /* #region #site_footer */
 
 #site_footer {
-    height: 70vh;
-}
-
-#footer_main {
-    background-color: darkcyan;
-    height: 80%;
-}
-
-#footer_footer {
-    background-color: darkorchid;
-    height: 20%;
+    background-color: black;
 }
 
 
