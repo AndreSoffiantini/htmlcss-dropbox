@@ -160,6 +160,14 @@
     .col_20 {
         width: 20%;
     }
+    
+    .col_25 {
+        width: 25%;
+    }
+    
+    .col_50 {
+        width: 50%;
+    }
     /* List classes */
     
     .unstyled_list {
@@ -353,25 +361,35 @@
     
     #partners_section .section_container {
         width: 100%;
+        max-width: 1440px;
+        margin-left: 0;
+        margin-right: 0;
     }
     
     #partners_header {
-        background-color: aquamarine;
-        width: 1200px;
+        width: 70%;
         margin: 0 auto;
-        height: 12%;
-    }
-    
-    #partners_main {
-        height: 88%;
-        background-color: burlywood;
-    }
-    
-    #partners_main .col_33 {
-        background-color: forestgreen;
+        padding: 0 28rem 0 3rem;
     }
     /* #endregion partners_section */
     /* #region faq_section */
+    
+    #faq_section h3 {
+        margin-bottom: 3rem;
+    }
+    
+    #faq_section .question {
+        line-height: 5rem;
+        border-top: 1px solid lightgray;
+        border-bottom: 1px solid lightgray;
+    }
+    
+    #faq_section .question>span {
+        position: absolute;
+        right: 0;
+        font-size: 20px;
+        font-weight: 700;
+    }
     /* #endregion faq_section */
     /* #endregion #site_main */
     /* #region #site_footer */
