@@ -444,6 +444,10 @@
     #get_in_touch_section .col_txt {
         padding: 2rem 0 0 5rem;
     }
+    
+    #get_in_touch_section .btn {
+        border: 1px solid black;
+    }
     /* #endregion get_in_touch_section */
     /* #region tools_section */
     
