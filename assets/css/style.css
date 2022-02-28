@@ -370,7 +370,7 @@
     #sub_plan_section .col_33 {
         width: calc(100%/3 - var(--gutter)*4/3);
         border: 1px solid lightgray;
-        height: 900px;
+        height: 1000px;
     }
     
     #sub_plan_section .col_100 {
