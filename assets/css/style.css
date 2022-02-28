@@ -152,6 +152,14 @@
         width: calc(100%/3);
     }
     
+    .col_36 {
+        width: 36%;
+    }
+    
+    .col_64 {
+        width: 64%;
+    }
+    
     .col_40 {
         width: 40%;
     }
@@ -255,7 +263,7 @@
     /* #region #site_header */
     
     #site_header {
-        padding: 0.75rem;
+        padding: 0 8px;
     }
     
     .navbar .logo {
@@ -267,14 +275,14 @@
         vertical-align: middle;
     }
     
-    .navbar .left_menu a,
-    .navbar .right_menu a {
-        padding: 0.5rem;
+    .navbar .left_menu,
+    .navbar .right_menu {
+        margin: 0 1rem;
     }
     
-    .navbar a {
-        font-size: 14;
-        font-weight: 400;
+    .navbar .left_menu a,
+    .navbar .right_menu a {
+        padding: 0.5rem 1rem 0 1rem;
     }
     /* #endregion #site_header */
     /* #region #site_main */
@@ -288,7 +296,7 @@
     
     .hero_image h1 {
         font-size: 68px;
-        padding-top: 4rem;
+        padding-top: 2rem;
     }
     
     .hero_text p {
@@ -301,8 +309,17 @@
         margin-bottom: 2rem;
     }
     
-    .hero_image .col_60>img {
+    .hero_image .col_36 {
+        padding-right: 69px;
+    }
+    
+    .hero_image .col_36 p {
+        font-size: 14px;
+    }
+    
+    .hero_image .col_64>img {
         margin-top: 2rem;
+        max-width: 100%;
     }
     
     .arrow_down {
