@@ -229,6 +229,14 @@
     .light_grey {
         background-color: var(--light-grey);
     }
+    
+    .azure {
+        background-color: var(--azure);
+    }
+    
+    .white {
+        background-color: white;
+    }
     /* Borders */
     
     .b_green {
@@ -435,13 +443,27 @@
         height: 360px;
     }
     
-    #partners_main .col_50:nth-child(2) p {
+    #partners_main>.row>.col_50 p {
         margin-top: 4rem;
         margin-bottom: 2rem;
     }
     
     #partners_main .container_col img {
         width: 98px;
+    }
+    
+    #partners_main .row.azure>.row_container {
+        width: 70%;
+        margin: 0 auto;
+        padding-top: 7rem;
+    }
+    
+    #partners_main .row.azure h2 {
+        color: var(--magenta);
+    }
+    
+    #partners_main .row.azure .col_40 {
+        text-align: end;
     }
     /* #endregion partners_section */
     /* #region faq_section */
