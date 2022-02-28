@@ -8,9 +8,11 @@
         --magenta: #61082B;
         --brown: #733656;
         --pale_green: #A2D39B;
+        --border_green: #d0dbd0;
         --brown_red: #D5001F;
         --orange: #FF1C1C;
         --yellow: #FFD830;
+        --light-grey: rgb(248, 247, 247);
         --font_size_h2: 36px;
         --font_size_h3: 25px;
     }
@@ -206,6 +208,32 @@
         padding-left: 1rem;
         padding-right: 1rem;
     }
+    /* Background colors */
+    
+    .pale_green {
+        background-color: var(--pale_green);
+    }
+    
+    .magenta {
+        background-color: var(--magenta);
+    }
+    
+    .green_blue {
+        background-color: var(--green_blue);
+    }
+    
+    .orange {
+        background-color: var(--orange);
+    }
+    
+    .light_grey {
+        background-color: var(--light-grey);
+    }
+    /* Borders */
+    
+    .b_green {
+        border: 8px solid var(--border_green);
+    }
     /* #endregion Utility */
     /* #region #site_header */
     
@@ -353,7 +381,7 @@
     }
     
     #tools_section .col_33 {
-        padding: 0 24px;
+        padding: 0 24px 0 0;
         margin: 3rem 0;
     }
     /* #endregion tools_section */
@@ -369,7 +397,51 @@
     #partners_header {
         width: 70%;
         margin: 0 auto;
-        padding: 0 28rem 0 3rem;
+        padding: 0 28rem 0 0;
+    }
+    
+    #partners_header a {
+        color: var(--cornflower);
+        text-decoration: underline;
+        display: inline-block;
+        margin: 2rem 0 3rem 0;
+    }
+    
+    #partners_main .col_25 {
+        min-height: 360px;
+    }
+    
+    #partners_main>.row {
+        min-height: 360px;
+    }
+    
+    #partners_main .col_25 .col_50 {
+        height: 180px;
+        position: relative;
+    }
+    
+    #partners_main .col_25 .col_50 img {
+        filter: invert();
+        width: 60%;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+    }
+    
+    #partners_main>.row>.col_50 {
+        padding: 2rem;
+        background-color: var(--light-grey);
+        height: 360px;
+    }
+    
+    #partners_main .col_50:nth-child(2) p {
+        margin-top: 4rem;
+        margin-bottom: 2rem;
+    }
+    
+    #partners_main .container_col img {
+        width: 98px;
     }
     /* #endregion partners_section */
     /* #region faq_section */
