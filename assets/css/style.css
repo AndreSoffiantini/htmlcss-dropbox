@@ -389,6 +389,7 @@
         right: 0;
         font-size: 20px;
         font-weight: 700;
+        transform: rotate(180deg);
     }
     /* #endregion faq_section */
     /* #endregion #site_main */
@@ -401,15 +402,16 @@
     }
     
     #footer_container {
-        margin: 5rem auto;
+        margin: 0 auto;
         width: 80%;
     }
     
-    .footer_container .row {
-        margin-top: -10rem;
+    #site_footer .col_20 {
+        margin-top: 5rem;
     }
     
     #site_footer h5 {
-        font-size:
+        font-size: 20px;
+        margin-bottom: 1rem;
     }
     /* #endregion #site_footer */
