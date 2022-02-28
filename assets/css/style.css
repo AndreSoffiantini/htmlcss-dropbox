@@ -13,6 +13,7 @@
         --orange: #FF1C1C;
         --yellow: #FFD830;
         --light-grey: rgb(248, 247, 247);
+        --gutter: 1.5rem;
         --font_size_h2: 36px;
         --font_size_h3: 25px;
     }
@@ -205,6 +206,14 @@
         background-color: var(--cornflower);
         color: white;
     }
+    /*   .checkmark {
+        appearance: initial;
+        width: 20px;
+        height: 20px;
+        border: solid 1px var(--cornflower);
+        border-radius: 50%;
+        vertical-align: middle;
+    } */
     /* Text */
     
     .text-right {
@@ -220,6 +229,14 @@
     .my_1 {
         margin-top: 1rem;
         margin-bottom: 1rem;
+    }
+    
+    .gut_r_1 {
+        margin-right: var(--gutter);
+    }
+    
+    .gut_l_1 {
+        margin-left: var(--gutter);
     }
     /* Background colors */
     
@@ -283,6 +300,7 @@
     .navbar .left_menu a,
     .navbar .right_menu a {
         padding: 0.5rem 1rem 0 1rem;
+        font-size: 14px;
     }
     /* #endregion #site_header */
     /* #region #site_main */
@@ -337,25 +355,34 @@
         font-size: 36px;
     }
     
-    #sub_plan_header ul {
+    #sub_plan_header form {
         margin-top: 3rem;
     }
     
-    #sub_plan_header li {
-        margin-right: 2.5rem;
+    #sub_plan_header label {
+        margin-right: 1.5rem;
     }
     
     #sub_plan_section [class^="col_"] {
         margin-top: 2rem;
+    }
+    
+    #sub_plan_section .col_33 {
+        width: calc(100%/3 - var(--gutter)*4/3);
         border: 1px solid lightgray;
+        height: 900px;
     }
     
     #sub_plan_section .col_100 {
         height: 20%;
+        border: 1px solid lightgray;
+        margin-top: calc(2*var(--gutter));
     }
     
     .header_col {
         text-align: center;
+        padding: 10px 0;
+        border-top: 1px solid lightgray;
     }
     
     .main_col {
@@ -374,7 +401,7 @@
         margin-top: 2rem;
     }
     
-    .plan_details li {
+    .plan_details div {
         margin-bottom: 1rem;
     }
     
@@ -402,6 +429,10 @@
     
     .plan_focus_points ul>li {
         margin-bottom: 1rem;
+    }
+    
+    .plan_focus_points i {
+        color: var(--cornflower);
     }
     
     #sub_plan_section .col_100 .contact_btn {
