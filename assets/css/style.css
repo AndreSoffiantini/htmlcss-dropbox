@@ -22,6 +22,7 @@
         padding: 0;
         box-sizing: border-box;
         font-family: 'Open Sans', sans-serif;
+        scroll-behavior: smooth;
     }
     
     a {
@@ -189,8 +190,7 @@
         display: inline-block;
         background-color: transparent;
         font-size: 0.9rem;
-        padding: 0.5rem;
-        border: 1px solid black;
+        padding: 0.5rem 1rem;
     }
     
     .cornflw_btn {
@@ -207,6 +207,11 @@
     .px_1 {
         padding-left: 1rem;
         padding-right: 1rem;
+    }
+    
+    .my_1 {
+        margin-top: 1rem;
+        margin-bottom: 1rem;
     }
     /* Background colors */
     
@@ -241,6 +246,10 @@
     
     .b_green {
         border: 8px solid var(--border_green);
+    }
+    
+    .b_black {
+        border: 1px solid black;
     }
     /* #endregion Utility */
     /* #region #site_header */
@@ -288,6 +297,8 @@
     
     .free_trial div {
         font-size: 0.75rem;
+        margin-top: 6px;
+        margin-bottom: 2rem;
     }
     
     .hero_image .col_60>img {
@@ -295,7 +306,11 @@
     }
     
     .arrow_down {
-        font-size: 45px;
+        font-size: 35px;
+    }
+    
+    .arrow_down a {
+        color: black;
     }
     /* #endregion hero_image */
     /* #region sub_plan_section */
