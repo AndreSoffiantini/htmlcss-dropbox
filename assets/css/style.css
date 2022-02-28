@@ -262,9 +262,13 @@
         height: 800px;
     }
     
-    #sub_plan_section .col_33 {
+    #sub_plan_section [class^="col_"] {
         margin-top: 2rem;
         border: 1px solid lightgray;
+    }
+    
+    #sub_plan_section .col_100 {
+        height: 20%;
     }
     
     .header_col {
@@ -315,6 +319,10 @@
     
     .plan_focus_points ul>li {
         margin-bottom: 1rem;
+    }
+    
+    #sub_plan_section .col_100 .contact_btn {
+        float: right;
     }
     /* #endregion sub_plan_section */
     /* #region get_in_touch_section */
