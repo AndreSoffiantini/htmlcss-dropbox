@@ -575,4 +575,12 @@
         font-size: 20px;
         margin-bottom: 1rem;
     }
+    
+    #site_footer .languages {
+        margin-top: 10rem;
+        color: lightgray;
+        border-top: 1px solid lightgray;
+        width: 120px;
+        padding-top: 2rem;
+    }
     /* #endregion #site_footer */
