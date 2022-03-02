@@ -464,7 +464,7 @@
     
     #partners_section .section_container {
         width: 100%;
-        max-width: 1440px;
+        max-width: 100%;
         margin-left: 0;
         margin-right: 0;
     }
